@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://reachkit.pages.dev/sitemap.xml
+Sitemap: https://myothurein.github.io/reachkit/sitemap.xml
