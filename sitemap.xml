@@ -1,66 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Home Page -->
   <url>
-    <loc>https://myothurein.github.io/reachkit/index.html</loc>
+    <loc>https://myothurein.github.io/reachkit/</loc>
     <lastmod>2026-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- Core Utility Tools (High SEO Priority) -->
   <url>
-    <loc>https://reachkit.pages.dev/tools/safe-zone-previewer</loc>
+    <loc>https://myothurein.github.io/reachkit/tools/safe-zone-previewer.html</loc>
     <lastmod>2026-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://reachkit.pages.dev/tools/earnings-calculator</loc>
+    <loc>https://myothurein.github.io/reachkit/tools/earnings-calculator.html</loc>
     <lastmod>2026-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://reachkit.pages.dev/tools/sponsorship-calculator</loc>
+    <loc>https://myothurein.github.io/reachkit/tools/sponsorship-calculator.html</loc>
     <lastmod>2026-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://reachkit.pages.dev/tools/roas-calculator</loc>
+    <loc>https://myothurein.github.io/reachkit/tools/roas-calculator.html</loc>
     <lastmod>2026-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://reachkit.pages.dev/tools/script-time-calculator</loc>
+    <loc>https://myothurein.github.io/reachkit/tools/script-time-calculator.html</loc>
     <lastmod>2026-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- Trust & Legal Pages -->
   <url>
-    <loc>https://reachkit.pages.dev/pages/about</loc>
+    <loc>https://myothurein.github.io/reachkit/pages/about.html</loc>
     <lastmod>2026-11-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://reachkit.pages.dev/pages/contact</loc>
+    <loc>https://myothurein.github.io/reachkit/pages/contact.html</loc>
     <lastmod>2026-11-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://reachkit.pages.dev/pages/privacy-policy</loc>
+    <loc>https://myothurein.github.io/reachkit/pages/privacy-policy.html</loc>
     <lastmod>2026-11-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://reachkit.pages.dev/pages/terms</loc>
+    <loc>https://myothurein.github.io/reachkit/pages/terms.html</loc>
     <lastmod>2026-11-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
