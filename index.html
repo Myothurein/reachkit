@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ReachKit — Free Utility Tools for Content Creators & Digital Marketers</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="theme-color" content="#4f46e5" />
+  <meta
+    name="description"
+    content="Free browser-based calculators and utility tools for YouTube, TikTok, Reels, and paid ads. Preview safe zones, estimate earnings, and calculate ROAS with no sign-up."
+  />
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="ReachKit — Free Tools to Grow & Monetize" />
+  <meta
+    property="og:description"
+    content="Preview safe zones, estimate creator earnings, and calculate ad ROAS — 100% free, runs in your browser."
+  />
+
+  <!-- Fonts (Inter with fast system fallback) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Prevent Dark Mode Flash Before Paint -->
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem("reachkit-theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const theme = savedTheme || (prefersDark ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "ReachKit",
+  "url": "https://reachkit.pages.dev/",
+  "description": "Free browser-based calculators and utility tools for content creators and digital marketers."
+  }
+</script>
+</head>
+
+<body>
+  <!-- Section 1: Sticky Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="ReachKit Home">
+        <span class="brand-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+          </svg>
+        </span>
+        <span class="brand-name">ReachKit</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary Navigation">
+        <a href="#tools" class="nav-link" data-nav-filter="all">All Tools</a>
+        <a href="#tools" class="nav-link" data-nav-filter="video">Creators</a>
+        <a href="#tools" class="nav-link" data-nav-filter="money">Marketers</a>
+        <a href="pages/about.html" class="nav-link">About</a>
+      </nav>
+
+      <div class="header-actions">
+        <button
+          type="button"
+          class="icon-btn"
+          id="themeToggle"
+          aria-label="Toggle Light and Dark Mode"
+          title="Toggle Theme"
+        >
+          <!-- Sun Icon (shown in dark mode) -->
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+          <!-- Moon Icon (shown in light mode) -->
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+
+        <button
+          type="button"
+          class="icon-btn mobile-menu-btn"
+          id="mobileMenuToggle"
+          aria-label="Toggle Navigation Menu"
+          aria-expanded="false"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Section 2: Compact Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <span class="hero-badge">Updated for 2026 Platform Specs</span>
+        <h1>Free Utility Tools for Content Creators & Digital Marketers</h1>
+        <p class="hero-subtitle">
+          Preview safe zones, estimate earnings, and calculate ad ROAS — 100% free, runs directly in your browser, no sign-up required.
+        </p>
+
+        <!-- Quick Filter Tabs -->
+        <div class="filter-tabs" role="tablist" aria-label="Filter Tools by Category">
+          <button type="button" class="filter-tab active" data-filter="all" role="tab" aria-selected="true">
+            All <span class="tab-count">5</span>
+          </button>
+          <button type="button" class="filter-tab" data-filter="video" role="tab" aria-selected="false">
+            Video & Content <span class="tab-count">2</span>
+          </button>
+          <button type="button" class="filter-tab" data-filter="money" role="tab" aria-selected="false">
+            Money & Ads <span class="tab-count">3</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: The 5-Tool Grid -->
+    <section class="tools-section" id="tools">
+      <div class="container">
+        <div class="tools-grid" id="toolsGrid">
+          <!-- Tool 1 -->
+          <article class="tool-card" data-category="video">
+            <div class="tool-card-top">
+              <div class="tool-icon icon-indigo" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                  <line x1="12" y1="18" x2="12.01" y2="18" />
+                </svg>
+              </div>
+              <span class="category-tag">Video & Content</span>
+            </div>
+            <h2>Safe-Zone Previewer</h2>
+            <p>Check if TikTok, Reels & Shorts UI buttons cover your captions, hooks, or key visuals before posting.</p>
+            <a href="tools/safe-zone-previewer.html" class="tool-cta">
+              Open Tool
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+          </article>
+
+          <!-- Tool 2 -->
+          <article class="tool-card" data-category="money">
+            <div class="tool-card-top">
+              <div class="tool-icon icon-emerald" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="1" x2="12" y2="23" />
+                  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                </svg>
+              </div>
+              <span class="category-tag">Money & Ads</span>
+            </div>
+            <h2>YouTube & TikTok Earnings Calculator</h2>
+            <p>Estimate monthly and yearly creator revenue based on views, content niche, and target country RPM.</p>
+            <a href="tools/earnings-calculator.html" class="tool-cta">
+              Open Tool
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+          </article>
+
+          <!-- Tool 3 -->
+          <article class="tool-card" data-category="money">
+            <div class="tool-card-top">
+              <div class="tool-icon icon-amber" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+                  <line x1="7" y1="7" x2="7.01" y2="7" />
+                </svg>
+              </div>
+              <span class="category-tag">Money & Ads</span>
+            </div>
+            <h2>Sponsorship Rate Calculator</h2>
+            <p>Calculate fair brand deal pricing using your average views, engagement rate, and usage rights.</p>
+            <a href="tools/sponsorship-calculator.html" class="tool-cta">
+              Open Tool
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+          </article>
+
+          <!-- Tool 4 -->
+          <article class="tool-card" data-category="money">
+            <div class="tool-card-top">
+              <div class="tool-icon icon-sky" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="23 6 13.5 15.5 8.5 10.5 1 18" />
+                  <polyline points="17 6 23 6 23 12" />
+                </svg>
+              </div>
+              <span class="category-tag">Money & Ads</span>
+            </div>
+            <h2>Ad ROAS & Break-Even Calculator</h2>
+            <p>Find the exact break-even ROAS and profit margin needed to scale Facebook and TikTok Ad campaigns.</p>
+            <a href="tools/roas-calculator.html" class="tool-cta">
+              Open Tool
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+          </article>
+
+          <!-- Tool 5 -->
+          <article class="tool-card" data-category="video">
+            <div class="tool-card-top">
+              <div class="tool-icon icon-rose" aria-hidden="true">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+              </div>
+              <span class="category-tag">Video & Content</span>
+            </div>
+            <h2>Script Reading-Time Calculator</h2>
+            <p>Paste your voiceover script to get exact video duration and pacing targets by speaking speed.</p>
+            <a href="tools/script-time-calculator.html" class="tool-cta">
+              Open Tool
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12" />
+                <polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Native Monetization Strip (Recommended Creator Stack) -->
+    <section class="stack-section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>Recommended Creator Stack</h2>
+            <p>Tools we trust for faster production, better SEO, and higher ad returns.</p>
+          </div>
+          <span class="disclosure-note">Partner links</span>
+        </div>
+
+        <div class="stack-grid">
+          <!-- Replace href="#" with your actual Affiliate URLs later -->
+          <a href="#" class="stack-card" target="_blank" rel="noopener sponsored">
+            <div class="stack-meta">
+              <span class="stack-name">vidIQ</span>
+              <span class="stack-pill">YouTube SEO</span>
+            </div>
+            <p>Find high-RPM video topics, track competitors, and optimize titles for search.</p>
+            <span class="stack-link">Explore vidIQ →</span>
+          </a>
+
+          <a href="#" class="stack-card" target="_blank" rel="noopener sponsored">
+            <div class="stack-meta">
+              <span class="stack-name">ElevenLabs</span>
+              <span class="stack-pill">AI Voiceover</span>
+            </div>
+            <p>Generate lifelike narrations and dub videos into global languages in minutes.</p>
+            <span class="stack-link">Try ElevenLabs →</span>
+          </a>
+
+          <a href="#" class="stack-card" target="_blank" rel="noopener sponsored">
+            <div class="stack-meta">
+              <span class="stack-name">Shopify</span>
+              <span class="stack-pill">E-Commerce</span>
+            </div>
+            <p>Launch a fast storefront to convert your paid social traffic into direct sales.</p>
+            <span class="stack-link">Start Free Trial →</span>
+          </a>
+        </div>
+
+        <!-- Reserved Native Ad Slot (Uncomment & paste Adsterra/Monetag code when ready)
+        <div class="ad-slot" aria-label="Sponsored Advertisement">
+          <span>Ad Slot Reserved (728x90 / Native Banner)</span>
+        </div>
+        -->
+      </div>
+    </section>
+
+    <!-- Section 5: Trust Strip & SEO Mini-FAQ -->
+    <section class="trust-faq-section">
+      <div class="container">
+        <!-- Trust Highlights -->
+        <div class="trust-strip">
+          <div class="trust-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+            <div>
+              <strong>100% Private (Browser-Only)</strong>
+              <span>Files and scripts never leave your device.</span>
+            </div>
+          </div>
+
+          <div class="trust-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+            <div>
+              <strong>No Login Required</strong>
+              <span>Open any calculator and get instant results.</span>
+            </div>
+          </div>
+
+          <div class="trust-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" y1="8" x2="12" y2="12" />
+              <line x1="12" y1="16" x2="12.01" y2="16" />
+            </svg>
+            <div>
+              <strong>Updated for 2026 Specs</strong>
+              <span>Aligned with current TikTok, Reels & Shorts UI.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mini FAQ -->
+        <div class="faq-wrapper">
+          <h2>Frequently Asked Questions</h2>
+
+          <div class="faq-list">
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">
+                <span>Are all tools on ReachKit completely free to use?</span>
+                <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>Yes. Every calculator and preview tool on ReachKit is 100% free with no account registration, paywalls, or usage caps.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">
+                <span>Do you store my uploaded thumbnails, screenshots, or scripts?</span>
+                <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>No. All ReachKit tools run locally inside your web browser using JavaScript. Your images, scripts, and revenue numbers are never uploaded to any external server.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">
+                <span>How accurate are the earnings and sponsorship calculators?</span>
+                <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>Our calculators use current industry RPM benchmarks across niches and regions to provide realistic ranges. Actual payouts can vary depending on audience geography, seasonality, and watch time.</p>
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-question" aria-expanded="false">
+                <span>Can I request a new creator or marketing tool?</span>
+                <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
+              <div class="faq-answer" hidden>
+                <p>Absolutely. Visit our Contact page to suggest calculators, templates, or format previewers you would like to see added next.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Section 6: Clean Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+            </svg>
+          </span>
+          <span class="brand-name">ReachKit</span>
+        </a>
+        <p>Fast, privacy-first utility tools built to help creators and digital marketers grow and monetize smarter.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Tools</h3>
+        <ul>
+          <li><a href="tools/safe-zone-previewer.html">Safe-Zone Previewer</a></li>
+          <li><a href="tools/earnings-calculator.html">Earnings Calculator</a></li>
+          <li><a href="tools/sponsorship-calculator.html">Sponsorship Calculator</a></li>
+          <li><a href="tools/roas-calculator.html">Ad ROAS Calculator</a></li>
+          <li><a href="tools/script-time-calculator.html">Script Time Calculator</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Company & Legal</h3>
+        <ul>
+          <li><a href="pages/about.html">About</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+          <li><a href="pages/privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="pages/terms.html">Terms & Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>© <span id="currentYear">2026</span> ReachKit. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

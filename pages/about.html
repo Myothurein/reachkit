@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About ReachKit — Privacy-First Tools for Creators &amp; Marketers</title>
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+<meta name="theme-color" content="#4f46e5" />
+  <meta
+    name="description"
+    content="Learn about ReachKit's mission to build fast, free, browser-based calculators and utility tools for content creators and digital marketers."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <script>
+    (function () {
+      const savedTheme = localStorage.getItem("reachkit-theme");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const theme = savedTheme || (prefersDark ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/pages.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="../index.html" class="brand" aria-label="ReachKit Home">
+        <span class="brand-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+          </svg>
+        </span>
+        <span class="brand-name">ReachKit</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary Navigation">
+        <a href="../index.html#tools" class="nav-link">All Tools</a>
+        <a href="../tools/safe-zone-previewer.html" class="nav-link">Safe-Zone</a>
+        <a href="../tools/earnings-calculator.html" class="nav-link">Earnings Calc</a>
+        <a href="../tools/roas-calculator.html" class="nav-link">ROAS Calc</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="icon-btn" id="themeToggle" aria-label="Toggle Theme" title="Toggle Theme">
+          <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+          <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+        </button>
+
+        <button type="button" class="icon-btn mobile-menu-btn" id="mobileMenuToggle" aria-label="Toggle Menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <line x1="3" y1="18" x2="21" y2="18" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span>/</span>
+          <span>About</span>
+        </nav>
+        <h1>Built to Save Creators &amp; Marketers Time Every Day</h1>
+        <p class="page-lead">
+          ReachKit is an independent hub of free, fast, privacy-first web utilities designed for video creators, social media managers, and performance marketers.
+        </p>
+      </div>
+    </section>
+
+    <section class="page-body">
+      <div class="container">
+        <div class="prose-card" style="max-width: 100%;">
+          <h2>Why We Built ReachKit</h2>
+          <p>
+            Running a modern content channel or paid ad account involves dozens of small, repetitive checks: making sure TikTok UI icons do not cover your captions, estimating realistic sponsorship rates before replying to a brand, timing a voiceover script, or checking break-even ROAS before scaling an ad set.
+          </p>
+          <p>
+            Most tools online hide these simple workflows behind account sign-ups, bloated spreadsheets, or slow paywalls. <strong>ReachKit</strong> puts the everyday utilities creators and digital marketers actually need into one clean, instant-loading workspace—completely free to use.
+          </p>
+
+          <h2>How Our Tools Work</h2>
+          <p>
+            Every calculator and previewer on ReachKit is engineered to run <strong>100% locally inside your web browser</strong> using standard HTML, CSS, and JavaScript. When you upload a video frame into our Safe-Zone Previewer or paste a confidential script into our Script Reading-Time Calculator, your files and text stay on your device and are never uploaded to our servers.
+          </p>
+
+          <h2>How ReachKit Stays Free</h2>
+          <p>
+            To keep every tool accessible without subscriptions or login walls, ReachKit is supported by non-intrusive display advertising and clearly labeled partner recommendations (affiliate links) for software we genuinely believe helps creators grow. Using our affiliate links costs you nothing extra and helps us maintain and build new utilities.
+          </p>
+        </div>
+
+        <div class="values-grid">
+          <div class="value-card">
+            <h3>Zero Sign-Up Friction</h3>
+            <p>Open any tool, enter your numbers or drop a file, and get answers in seconds—no email gates or accounts required.</p>
+          </div>
+          <div class="value-card">
+            <h3>Privacy by Architecture</h3>
+            <p>All calculations and image/video previews happen client-side in your browser so your creative assets remain private.</p>
+          </div>
+          <div class="value-card">
+            <h3>Current Industry Benchmarks</h3>
+            <p>Our safe-zone margins, RPM ranges, and sponsorship CPM tiers are maintained for 2026 platform specifications.</p>
+          </div>
+        </div>
+
+        <div class="cta-banner">
+          <div>
+            <h3>Have an idea for a new calculator or tool?</h3>
+            <p>We regularly add utilities requested by YouTubers, TikTok editors, and media buyers.</p>
+          </div>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a href="../index.html#tools" class="btn-primary">Explore All Tools</a>
+            <a href="contact.html" class="btn-secondary">Suggest a Tool</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="brand">
+          <span class="brand-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+            </svg>
+          </span>
+          <span class="brand-name">ReachKit</span>
+        </a>
+        <p>Fast, privacy-first utility tools built to help creators and digital marketers grow and monetize smarter.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Tools</h3>
+        <ul>
+          <li><a href="../tools/safe-zone-previewer.html">Safe-Zone Previewer</a></li>
+          <li><a href="../tools/earnings-calculator.html">Earnings Calculator</a></li>
+          <li><a href="../tools/sponsorship-calculator.html">Sponsorship Calculator</a></li>
+          <li><a href="../tools/roas-calculator.html">Ad ROAS Calculator</a></li>
+          <li><a href="../tools/script-time-calculator.html">Script Time Calculator</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Company &amp; Legal</h3>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; <span id="currentYear">2026</span> ReachKit. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
